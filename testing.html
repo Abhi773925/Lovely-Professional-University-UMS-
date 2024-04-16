@@ -1,0 +1,129 @@
+Certainly! Below is the combined HTML and CSS code including the modifications for the side icon and main content area:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ums.Com</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            background: #fff;
+            height: 105px;
+            box-shadow: 0 1px 15px rgba(0, 0, 0, .2), 0 1px 6px rgba(0, 0, 0, .2);
+            position: fixed;
+            z-index: 3; /* Ensure the header is above both main content and sideicon */
+        }
+
+        .umslogo {
+            background-image: url(new-logo.png);
+            height: 100%;
+            width: 350px;
+            background-repeat: no-repeat;
+            display: flex;
+            margin-top: 35px;
+            font-size: large;
+            margin-left: 15px;
+            z-index: 1;
+        }
+
+        .linkheader {
+            height: 100%;
+            width: 85%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            border: 0;
+            border-radius: 0;
+            padding-left: 90px;
+        }
+
+        #a {
+            border: none;
+            border-radius: 0;
+            color: #6f6f6f;
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 1px;
+            text-transform: capitalize;
+            text-align: right;
+        }
+
+        /* Add the rest of your existing CSS rules here */
+
+        .sideicon {
+            height: 100vh;
+            width: 120px;
+            background-color: #F68121;
+            margin-top: 105px;
+            position: fixed;
+            box-shadow: 0 1px 15px rgba(0, 0, 0, .2), 0 1px 6px rgba(0, 0, 0, .2);
+            z-index: 2;
+        }
+
+        .main {
+            margin-left: 120px;
+            padding: 20px;
+            height: 1000px;
+            width: calc(100% - 120px);
+            overflow-y: auto;
+            box-sizing: border-box;
+            text
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="umslogo"></div>
+        <div class="linkheader">
+            <select name="" id="a"><option value="">Academics</option></select>
+            <select name="" id="a"><option value="">Administrative</option></select>
+            <select name="" id="a"><option value="">Important Links</option></select>
+            <select name="" id="a"><option value="">Student Services</option></select>
+            <select name="" id="a"><option value="">Quick Links</option></select>
+        </div>
+        <div class="searchicon"><i class="fa-solid fa-magnifying-glass"></i></div>
+        <div class="profiledescription">
+            <div class="descriptionalign">
+                <strong>Abhishek Kumar</strong>
+                <p>Reg. No.: 12209346 | Section: K22ND</p>
+                <p> B.Tech. (Computer Science and Engineering) (P132 )</p>
+            </div>
+        </div>
+        <div class="profileimage">
+            <div class="pimage"></div>
+            <div class="signout">signout</div>
+        </div>
+    </div>
+    <div class="sideicon">
+        <div class="sideicon1"><i id="dashboard" style="font-size:48px" class="fa-solid fa-gauge-high"></i><strong id="dcenter">Dashboard</strong></div>
+        <div class="sideicon1"><i id="dashboard" style="font-size:48px" class="fa-solid fa-house"></i><strong id="dcenter">UMS Home</strong></div>
+        <div class="sideicon1"><i id="dashboard" style="font-size:48px" class="fa-solid fa-comment"></i><strong id="dcente" style="font-size:17px"> <pre>  Lpu Live</pre></strong></div>
+        <div class="sideicon1"><i id="dashboard" style="font-size:48px" class="fa-solid fa-mobile-screen-button"></i><strong id="dcenter">Lpu Touch</strong></div>
+        <div class="sideicon1"><i id="dashboard" style="font-size:48px" class="fa-solid fa-landmark"></i><strong id="dcenter1" >My Class</strong></div>
+        <div class="sideicon6"><i id="dashboard" style="font-size:48px" class="fa-solid fa-children"></i><strong id="dcenter2">Your Dost</strong></div>
+    </div>
+    <div class="main">
+        <!-- Your existing HTML content here -->
+        <pre>Lorem <br> ipsum dolor <br> sit amet consectetur adipisicing elit. Quae ad voluptatem vel nesciunt saepe tempore hic distinctio perferendis nulla,<br> <br> sit in quia, cupiditate, numquam minima illum soluta alias eveniet ea.</pre>
+    </div>
+</body>
+</html>
+```
+
+This combined code includes both your HTML and CSS. Replace `<!-- Your existing HTML content here -->` with your actual HTML content inside the `<body>` tag. Adjustments might be needed based on your specific design preferences and requirements.
